@@ -1,4 +1,4 @@
-/// Time Complexity: O(M + N)
+/// Time Complexity:  O(M + N)
 /// Space Complexity: O(1)
 fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
     let mut m = m as usize;

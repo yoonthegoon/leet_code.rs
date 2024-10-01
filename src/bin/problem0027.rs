@@ -1,4 +1,4 @@
-/// Time Complexity: O(n)
+/// Time Complexity:  O(n)
 /// Space Complexity: O(1)
 fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
     let mut i = 0;
