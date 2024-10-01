@@ -1,14 +1,14 @@
-/// Time Complexity: O(n^2)
+/// Time Complexity: O(n)
 /// Space Complexity: O(1)
 fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
-    for i in 0..nums.len() {
-        if i >= nums.len() { break; }
-        while nums[i] == val {
-            nums.remove(i);
-            if nums.len() == i { break; }
+    let mut i = 0;
+    for j in 0..nums.len() {
+        if nums[j] != val {
+            nums[i] = nums[j];
+            i += 1;
         }
     }
-    nums.len() as i32
+    i as i32
 }
 
 fn main() {
