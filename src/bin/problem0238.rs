@@ -6,9 +6,9 @@ fn product_except_self(nums: Vec<i32>) -> Vec<i32> {
     let mut result = vec![1; n];
     let mut left = vec![1; n];
     let mut right = vec![1; n];
-    for i in (1..n).rev() { left[i - 1] *= left[i] * nums[i]; }
-    for i in 0..n - 1 { right[i + 1] *= right[i] * nums[i]; }
-    for i in 0..n { result.push(left[i] * right[i]); }
+    for i in 0..n - 1 { left[i + 1] *= left[i] * nums[i]; }
+    for i in (1..n).rev() { right[i - 1] *= right[i] * nums[i]; }
+    for i in 0..n { result[i] = left[i] * right[i]; }
     result
 }
 
