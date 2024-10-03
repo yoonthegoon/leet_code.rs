@@ -6,7 +6,7 @@ fn h_index(citations: Vec<i32>) -> i32 {
     let mut indices = vec![0; len + 1];
     for citation in citations {
         let citation = citation as usize;
-        if citation >= len  +1 {
+        if citation > len {
             index += 1;
             continue;
         }
