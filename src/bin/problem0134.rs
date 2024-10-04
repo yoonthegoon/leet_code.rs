@@ -1,3 +1,5 @@
+/// Time Complexity:  O(N)
+/// Space Complexity: O(1)
 fn can_complete_circuit(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
     let n = gas.len();
     let mut i = 0;

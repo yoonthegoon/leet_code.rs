@@ -1,3 +1,5 @@
+/// Time Complexity:  O(N)
+/// Space Complexity: O(N)
 fn candy(ratings: Vec<i32>) -> i32 {
     let n = ratings.len();
     let mut candies = Vec::with_capacity(n);
